@@ -1,0 +1,142 @@
+/* Resetování stylů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Obecné nastavení */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hlavička */
+header {
+    background-color: #dd5a13;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigace */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+}
+
+/* Hlavní obsah a postranní panel */
+main {
+    float: left;
+    width: 70%;
+    padding: 20px;
+}
+
+aside {
+    float: right;
+    width: 28%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Sekce */
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Patička */
+footer {
+    clear: both;
+    background-color: #dd5a13;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Odkazy v postranní navigaci */
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Odkazy při najetí myší */
+nav ul li a:hover,
+aside ul li a:hover {
+    color: #e8491d;
+}
+
+/* ===== Responzivní design ===== */
+
+/* Pro obrazovky menší než 768px */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main, aside {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+
+    aside {
+        background-color: #fff;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+
+    header h1, section h2, aside h2 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+    }
+}
+
+/* Pro obrazovky menší než 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    header h1, section h2, aside h2 {
+        font-size: 1.2em;
+    }
+}
