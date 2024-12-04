@@ -28,10 +28,11 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 5px 15px;
 }
 
 nav ul li a {
@@ -43,14 +44,14 @@ nav ul li a {
 
 /* Hlavní obsah a postranní panel */
 main {
-    float: left;
     width: 70%;
+    float: left;
     padding: 20px;
 }
 
 aside {
-    float: right;
     width: 28%;
+    float: right;
     padding: 20px;
     background-color: #f4f4f4;
 }
