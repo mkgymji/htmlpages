@@ -1,0 +1,54 @@
+/* Toto je kaskádový styl pro mé stránky */
+
+* {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 16px;
+    color: #9d9db4;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #9bbd9b;
+}
+
+#lorem {
+    font-size: 20px;
+    color: red;
+    margin-left: 1em;
+    border: 5px solid #9bbd9b;
+    width: 80vw;
+    text-align: justify;
+    padding: 1em;
+}
+.vycet {
+    font-size: 20px;
+    color: #9d9db4
+    margin-left: 1em;
+}
+
+#kocicka {
+    margin-left: 10vw;
+    width: 80vw;
+}
+
+a {
+    color: #9bbd9b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgreen;
+    background-color: bisque;
+}
