@@ -44,6 +44,7 @@ function obsluha(event) {
     nadpis.addEventListener("mouseout", function(event) {
         nadpis.style.color = "red";
         nadpis.textContent = zasobnik;
+    });
     
     var odstavec = document.querySelector("#prazdny");
     odstavec.innerHTML = "<h2>"+cislo+"</h2>";    
@@ -59,6 +60,5 @@ function obsluha(event) {
         odstavec.innerHTML = "<h2>"+cislo+"</h2>";    
         odstavec.style.color = "red";
     });    
- });
 }
 document.addEventListener("DOMContentLoaded", obsluha);
